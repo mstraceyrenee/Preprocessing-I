@@ -191,3 +191,28 @@ header nav a {
   color: coral;
 }
 /* This closes the header */
+/* This begins the introduction styling */
+.intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid royalblue;
+}
+.intro img {
+  width: 50%;
+  height: auto;
+}
+.intro h3 {
+  font-family: 'PT Serif', serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: royalblue;
+  margin-bottom: 20px;
+}
+.intro p {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 1.8rem;
+}
+.intro .intro-text {
+  margin: 0 5%;
+}

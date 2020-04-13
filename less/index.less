@@ -75,11 +75,17 @@ html {
 	justify-content: space-between;
 	align-items: baseline;
 }
+.reg-flex(){
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
 
 /* This begins the header styling */
 header {
 	.nav-flex();
 	background: lightcyan;
+
 	h1 {
 		font-family: @header-font;
 		font-size: 4rem;
@@ -97,3 +103,28 @@ header {
 		}
 	} /* This closes the nav */
 } /* This closes the header */
+
+/* This begins the introduction styling */
+.intro {
+	.reg-flex();
+	border-bottom: 2px solid @primary-color;
+	
+	img {
+		width: 50%;
+		height: auto;
+	}
+	h3 {
+		font-family: @header-font;
+		font-size: 2.4rem;
+		font-weight: 700;
+		color: @primary-color;
+		margin-bottom: 20px;
+	}
+	p {
+		font-family: @body-font;
+		font-size: 1.8rem;
+	}
+	.intro-text {
+		margin: 0 5%;
+	}
+}
