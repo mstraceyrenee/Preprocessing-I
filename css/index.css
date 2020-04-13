@@ -134,3 +134,60 @@ html,
 body {
   height: 100%;
 }
+/* Adds font families */
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('PT Sans'), local('PTSans-Regular'), url(https://fonts.gstatic.com/s/ptsans/v11/jizaRExUiTo99u79P0U.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('PT Sans Bold'), local('PTSans-Bold'), url(https://fonts.gstatic.com/s/ptsans/v11/jizfRExUiTo99u79B_mh4Ok.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'PT Serif';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: local('PT Serif Italic'), local('PTSerif-Italic'), url(https://fonts.gstatic.com/s/ptserif/v11/EJRTQgYoZZY2vCFuvAFTzro.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'PT Serif';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('PT Serif Bold'), local('PTSerif-Bold'), url(https://fonts.gstatic.com/s/ptserif/v11/EJRSQgYoZZY2vCFuvAnt65qV.ttf) format('truetype');
+}
+html {
+  font-size: 62.5%;
+}
+/* Variables */
+/* Mixins */
+/* This begins the header styling */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  background: lightcyan;
+  /* This closes the nav */
+}
+header h1 {
+  font-family: 'PT Serif', serif;
+  font-size: 4rem;
+  font-weight: 700;
+  color: royalblue;
+  margin: 30px 10px;
+}
+header nav a {
+  text-decoration: none;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 1.8rem;
+  padding: 10px 20px;
+  color: coral;
+}
+/* This closes the header */

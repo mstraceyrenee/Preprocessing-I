@@ -56,3 +56,44 @@ table {
 html, body {
     height: 100%;
 }
+
+/* Adds font families */
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=PT+Serif:ital,wght@0,700;1,400&display=swap');
+html {
+	font-size: 62.5%;
+}
+
+/* Variables */
+@header-font: 'PT Serif', serif;
+@body-font: 'PT Sans', sans-serif;
+@primary-color: royalblue;
+@secondary-color: coral;
+
+/* Mixins */
+.nav-flex(){
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+}
+
+/* This begins the header styling */
+header {
+	.nav-flex();
+	background: lightcyan;
+	h1 {
+		font-family: @header-font;
+		font-size: 4rem;
+		font-weight: 700;
+		color: @primary-color;
+		margin: 30px 10px;
+	}
+	nav {
+		a {
+			text-decoration: none;
+			font-family: @body-font;
+			font-size: 1.8rem;
+			padding: 10px 20px;
+			color: @secondary-color;
+		}
+	} /* This closes the nav */
+} /* This closes the header */
