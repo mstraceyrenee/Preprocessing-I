@@ -1,1 +1,347 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+/* Adds font families */
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('PT Sans'), local('PTSans-Regular'), url(https://fonts.gstatic.com/s/ptsans/v11/jizaRExUiTo99u79P0U.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('PT Sans Bold'), local('PTSans-Bold'), url(https://fonts.gstatic.com/s/ptsans/v11/jizfRExUiTo99u79B_mh4Ok.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'PT Serif';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: local('PT Serif Italic'), local('PTSerif-Italic'), url(https://fonts.gstatic.com/s/ptserif/v11/EJRTQgYoZZY2vCFuvAFTzro.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'PT Serif';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('PT Serif Bold'), local('PTSerif-Bold'), url(https://fonts.gstatic.com/s/ptserif/v11/EJRSQgYoZZY2vCFuvAnt65qV.ttf) format('truetype');
+}
+html {
+  font-size: 62.5%;
+}
+/* Variables */
+/* Mixins */
+/* This begins the header styling */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  background: lightcyan;
+  /* This closes the nav */
+}
+@media (max-width: 500px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+header h1 {
+  font-family: 'PT Serif', serif;
+  font-size: 4rem;
+  font-weight: 700;
+  color: royalblue;
+  margin: 30px 10px;
+}
+header nav {
+  padding-bottom: 20px;
+}
+header nav a {
+  text-decoration: none;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 1.8rem;
+  padding: 10px 20px;
+  color: coral;
+}
+header nav a:last-of-type {
+  font-weight: 700;
+  text-decoration: underline;
+}
+/* This closes the header */
+/* This begins the introduction styling */
+.intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 4px solid royalblue;
+}
+@media (max-width: 500px) {
+  .intro {
+    flex-direction: column;
+  }
+}
+.intro img {
+  width: 50%;
+  height: auto;
+}
+.intro h3 {
+  font-family: 'PT Serif', serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: royalblue;
+  margin-bottom: 20px;
+}
+@media (max-width: 500px) {
+  .intro h3 {
+    text-align: center;
+    margin: 20px auto;
+  }
+}
+.intro p {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 1.8rem;
+  line-height: 1.5;
+}
+.intro .intro-text {
+  margin: 0 5%;
+}
+@media (max-width: 500px) {
+  .intro .intro-text {
+    margin: 0 5% 20px;
+  }
+}
+/* This closes the introduction */
+/* This begins the Skills & Work History section styling */
+.work {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: 4px solid royalblue;
+  margin: 20px 0 0;
+  /* This closes the Skills */
+  /* This closes the Work History */
+}
+@media (max-width: 500px) {
+  .work {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.work h3 {
+  font-family: 'PT Serif', serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: royalblue;
+  margin-bottom: 20px;
+}
+@media (max-width: 500px) {
+  .work h3 {
+    text-align: center;
+  }
+}
+.work p {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 1.8rem;
+  line-height: 1.5;
+}
+.work .skills {
+  margin: 0 5% 20px;
+  width: 50%;
+}
+@media (max-width: 500px) {
+  .work .skills {
+    width: 100%;
+    border-bottom: 4px solid royalblue;
+  }
+}
+.work .skills ul {
+  list-style: circle inside;
+}
+@media (max-width: 500px) {
+  .work .skills ul {
+    margin: 0 15% 20px;
+  }
+}
+.work .skills ul li {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 1.8rem;
+  line-height: 1.5;
+}
+.work .history {
+  margin: 0 5% 20px;
+  width: 50%;
+  font-family: 'PT Sans', sans-serif;
+}
+@media (max-width: 500px) {
+  .work .history {
+    width: 90%;
+  }
+}
+.work .history h4 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: coral;
+  margin-bottom: 5px;
+}
+.work .history h5 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+/* This closes the Skills & Work History section */
+/* This begins the footer styling */
+footer {
+  background: lightcyan;
+  height: 120px;
+  text-align: center;
+}
+footer h3 {
+  font-family: 'PT Serif', serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: royalblue;
+  margin-bottom: 20px;
+  padding-top: 10px;
+}
+footer p {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 1.8rem;
+  line-height: 1.5;
+}
+/* This closes the footer */

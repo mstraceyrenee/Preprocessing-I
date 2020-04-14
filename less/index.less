@@ -57,3 +57,177 @@ html, body {
     height: 100%;
 }
 
+/* Adds font families */
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=PT+Serif:ital,wght@0,700;1,400&display=swap');
+html {
+	font-size: 62.5%;
+}
+
+/* Variables */
+@header-font: 'PT Serif', serif;
+@body-font: 'PT Sans', sans-serif;
+@primary-color: royalblue;
+@secondary-color: coral;
+
+/* Mixins */
+.inline-flex(){
+	display: flex;
+	justify-content: space-between;
+}
+.p-text(){
+	font-family: @body-font;
+	font-size: 1.8rem;
+	line-height: 1.5;
+}
+
+/* This begins the header styling */
+header {
+	.inline-flex();
+	align-items: baseline;
+	background: lightcyan;
+	@media (max-width: 500px) {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	h1 {
+		font-family: @header-font;
+		font-size: 4rem;
+		font-weight: 700;
+		color: @primary-color;
+		margin: 30px 10px;
+	}
+	nav {
+		padding-bottom: 20px;
+		a {
+			text-decoration: none;
+			font-family: @body-font;
+			font-size: 1.8rem;
+			padding: 10px 20px;
+			color: @secondary-color;
+			&:last-of-type {
+				font-weight: 700;
+				text-decoration: underline;
+			}
+		}
+	} /* This closes the nav */
+} /* This closes the header */
+
+/* This begins the introduction styling */
+.intro {
+	.inline-flex();
+	align-items: center;
+	border-bottom: 4px solid @primary-color;
+	@media (max-width: 500px) {
+		flex-direction: column;
+	}
+
+	img {
+		width: 50%;
+		height: auto;
+	}
+	h3 {
+		font-family: @header-font;
+		font-size: 2.4rem;
+		font-weight: 700;
+		color: @primary-color;
+		margin-bottom: 20px;
+		@media (max-width: 500px) {
+			text-align: center;	
+			margin: 20px auto;
+		}
+		
+	}
+	p {
+		.p-text();
+	}
+	.intro-text {
+		margin: 0 5%;
+		@media (max-width: 500px) {
+			margin: 0 5% 20px;
+		}
+	}
+} /* This closes the introduction */
+
+/* This begins the Skills & Work History section styling */
+.work {
+	.inline-flex();
+	align-items: flex-start;
+	border-bottom: 4px solid @primary-color;
+	margin: 20px 0 0;
+	@media (max-width: 500px) {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	h3 {
+		font-family: @header-font;
+		font-size: 2.4rem;
+		font-weight: 700;
+		color: @primary-color;
+		margin-bottom: 20px;
+		@media (max-width: 500px) {
+			text-align: center;
+		}
+	}
+	p {
+		.p-text();
+	}
+	.skills {
+		margin: 0 5% 20px;
+		width: 50%;
+		@media (max-width: 500px) {
+			width: 100%;
+			border-bottom: 4px solid @primary-color;
+		}
+		ul {
+			list-style: circle inside;
+			@media (max-width: 500px) {
+				margin: 0 15% 20px;
+			}
+			li {
+				font-family: @body-font;
+				font-size: 1.8rem;
+				line-height: 1.5;
+			}
+		}
+	} /* This closes the Skills */
+	.history {
+		margin: 0 5% 20px;
+		width: 50%;
+		font-family: @body-font;
+		@media (max-width: 500px) {
+			width: 90%;
+		}
+		h4 {
+			font-size: 2rem;
+			font-weight: 700;
+			color: @secondary-color;
+			margin-bottom: 5px;
+		}
+		h5 {
+			font-size: 1.8rem;
+			font-weight: 700;
+			margin-bottom: 5px;
+		}
+	} /* This closes the Work History */
+
+} /* This closes the Skills & Work History section */
+
+/* This begins the footer styling */
+footer {
+	background: lightcyan;
+	height: 120px;
+	text-align: center;
+	h3 {
+		font-family: @header-font;
+		font-size: 2.4rem;
+		font-weight: 700;
+		color: @primary-color;
+		margin-bottom: 20px;
+		padding-top: 10px;
+	}
+	p {
+		.p-text();
+	}
+} /* This closes the footer */
