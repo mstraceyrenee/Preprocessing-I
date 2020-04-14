@@ -196,7 +196,7 @@ header nav a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 2px solid royalblue;
+  border-bottom: 4px solid royalblue;
 }
 .intro img {
   width: 50%;
@@ -212,7 +212,83 @@ header nav a {
 .intro p {
   font-family: 'PT Sans', sans-serif;
   font-size: 1.8rem;
+  line-height: 1.5;
 }
 .intro .intro-text {
   margin: 0 5%;
 }
+/* This closes the introduction */
+/* This begins the Skills & Work History section styling */
+.work {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: 4px solid royalblue;
+  margin: 20px 0 0;
+  /* This closes the Skills */
+  /* This closes the Work History */
+}
+.work h3 {
+  font-family: 'PT Serif', serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: royalblue;
+  margin-bottom: 20px;
+}
+.work p {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 1.8rem;
+}
+.work .skills {
+  margin: 0 5% 20px;
+  width: 50%;
+}
+.work .skills ul {
+  list-style: circle inside;
+}
+.work .skills ul li {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 1.8rem;
+  line-height: 1.5;
+}
+.work .history {
+  margin: 0 5% 20px;
+  width: 50%;
+  font-family: 'PT Sans', sans-serif;
+}
+.work .history h4 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: coral;
+  margin-bottom: 5px;
+}
+.work .history h5 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.work .history p {
+  font-size: 1.8rem;
+  line-height: 1.5;
+}
+/* This closes the Skills & Work History section */
+/* This begins the footer styling */
+footer {
+  background: lightcyan;
+  height: 120px;
+  text-align: center;
+}
+footer h3 {
+  font-family: 'PT Serif', serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: royalblue;
+  margin-bottom: 20px;
+  padding-top: 10px;
+}
+footer p {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 1.8rem;
+  line-height: 1.5;
+}
+/* This closes the footer */

@@ -70,20 +70,15 @@ html {
 @secondary-color: coral;
 
 /* Mixins */
-.nav-flex(){
+.inline-flex(){
 	display: flex;
 	justify-content: space-between;
-	align-items: baseline;
-}
-.reg-flex(){
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
 }
 
 /* This begins the header styling */
 header {
-	.nav-flex();
+	.inline-flex();
+	align-items: baseline;
 	background: lightcyan;
 
 	h1 {
@@ -106,9 +101,10 @@ header {
 
 /* This begins the introduction styling */
 .intro {
-	.reg-flex();
-	border-bottom: 2px solid @primary-color;
-	
+	.inline-flex();
+	align-items: center;
+	border-bottom: 4px solid @primary-color;
+
 	img {
 		width: 50%;
 		height: auto;
@@ -123,8 +119,82 @@ header {
 	p {
 		font-family: @body-font;
 		font-size: 1.8rem;
+		line-height: 1.5;
 	}
 	.intro-text {
 		margin: 0 5%;
 	}
-}
+} /* This closes the introduction */
+
+/* This begins the Skills & Work History section styling */
+.work {
+	.inline-flex();
+	align-items: flex-start;
+	border-bottom: 4px solid @primary-color;
+	margin: 20px 0 0;
+
+	h3 {
+		font-family: @header-font;
+		font-size: 2.4rem;
+		font-weight: 700;
+		color: @primary-color;
+		margin-bottom: 20px;
+	}
+	p {
+		font-family: @body-font;
+		font-size: 1.8rem;
+	}
+	.skills {
+		margin: 0 5% 20px;
+		width: 50%;
+		ul {
+			list-style: circle inside;
+			li {
+				font-family: @body-font;
+				font-size: 1.8rem;
+				line-height: 1.5;
+			}
+		}
+	} /* This closes the Skills */
+	.history {
+		margin: 0 5% 20px;
+		width: 50%;
+		font-family: @body-font;
+		h4 {
+			font-size: 2rem;
+			font-weight: 700;
+			color: @secondary-color;
+			margin-bottom: 5px;
+		}
+		h5 {
+			font-size: 1.8rem;
+			font-weight: 700;
+			margin-bottom: 5px;
+		}
+		p {
+			font-size: 1.8rem;
+			line-height: 1.5;
+		}
+	} /* This closes the Work History */
+
+} /* This closes the Skills & Work History section */
+
+/* This begins the footer styling */
+footer {
+	background: lightcyan;
+	height: 120px;
+	text-align: center;
+	h3 {
+		font-family: @header-font;
+		font-size: 2.4rem;
+		font-weight: 700;
+		color: @primary-color;
+		margin-bottom: 20px;
+		padding-top: 10px;
+	}
+	p {
+		font-family: @body-font;
+		font-size: 1.8rem;
+		line-height: 1.5;
+	}
+} /* This closes the footer */
