@@ -176,12 +176,21 @@ header {
   background: lightcyan;
   /* This closes the nav */
 }
+@media (max-width: 500px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 header h1 {
   font-family: 'PT Serif', serif;
   font-size: 4rem;
   font-weight: 700;
   color: royalblue;
   margin: 30px 10px;
+}
+header nav {
+  padding-bottom: 20px;
 }
 header nav a {
   text-decoration: none;
@@ -190,6 +199,10 @@ header nav a {
   padding: 10px 20px;
   color: coral;
 }
+header nav a:last-of-type {
+  font-weight: 700;
+  text-decoration: underline;
+}
 /* This closes the header */
 /* This begins the introduction styling */
 .intro {
@@ -197,6 +210,11 @@ header nav a {
   justify-content: space-between;
   align-items: center;
   border-bottom: 4px solid royalblue;
+}
+@media (max-width: 500px) {
+  .intro {
+    flex-direction: column;
+  }
 }
 .intro img {
   width: 50%;
@@ -209,6 +227,12 @@ header nav a {
   color: royalblue;
   margin-bottom: 20px;
 }
+@media (max-width: 500px) {
+  .intro h3 {
+    text-align: center;
+    margin: 20px auto;
+  }
+}
 .intro p {
   font-family: 'PT Sans', sans-serif;
   font-size: 1.8rem;
@@ -216,6 +240,11 @@ header nav a {
 }
 .intro .intro-text {
   margin: 0 5%;
+}
+@media (max-width: 500px) {
+  .intro .intro-text {
+    margin: 0 5% 20px;
+  }
 }
 /* This closes the introduction */
 /* This begins the Skills & Work History section styling */
@@ -228,12 +257,23 @@ header nav a {
   /* This closes the Skills */
   /* This closes the Work History */
 }
+@media (max-width: 500px) {
+  .work {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .work h3 {
   font-family: 'PT Serif', serif;
   font-size: 2.4rem;
   font-weight: 700;
   color: royalblue;
   margin-bottom: 20px;
+}
+@media (max-width: 500px) {
+  .work h3 {
+    text-align: center;
+  }
 }
 .work p {
   font-family: 'PT Sans', sans-serif;
@@ -243,8 +283,19 @@ header nav a {
   margin: 0 5% 20px;
   width: 50%;
 }
+@media (max-width: 500px) {
+  .work .skills {
+    width: 100%;
+    border-bottom: 4px solid royalblue;
+  }
+}
 .work .skills ul {
   list-style: circle inside;
+}
+@media (max-width: 500px) {
+  .work .skills ul {
+    margin: 0 15% 20px;
+  }
 }
 .work .skills ul li {
   font-family: 'PT Sans', sans-serif;
@@ -255,6 +306,11 @@ header nav a {
   margin: 0 5% 20px;
   width: 50%;
   font-family: 'PT Sans', sans-serif;
+}
+@media (max-width: 500px) {
+  .work .history {
+    width: 90%;
+  }
 }
 .work .history h4 {
   font-size: 2rem;
