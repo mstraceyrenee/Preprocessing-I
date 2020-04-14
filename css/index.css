@@ -278,6 +278,7 @@ header nav a:last-of-type {
 .work p {
   font-family: 'PT Sans', sans-serif;
   font-size: 1.8rem;
+  line-height: 1.5;
 }
 .work .skills {
   margin: 0 5% 20px;
@@ -322,10 +323,6 @@ header nav a:last-of-type {
   font-size: 1.8rem;
   font-weight: 700;
   margin-bottom: 5px;
-}
-.work .history p {
-  font-size: 1.8rem;
-  line-height: 1.5;
 }
 /* This closes the Skills & Work History section */
 /* This begins the footer styling */

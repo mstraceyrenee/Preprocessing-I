@@ -74,6 +74,11 @@ html {
 	display: flex;
 	justify-content: space-between;
 }
+.p-text(){
+	font-family: @body-font;
+	font-size: 1.8rem;
+	line-height: 1.5;
+}
 
 /* This begins the header styling */
 header {
@@ -134,9 +139,7 @@ header {
 		
 	}
 	p {
-		font-family: @body-font;
-		font-size: 1.8rem;
-		line-height: 1.5;
+		.p-text();
 	}
 	.intro-text {
 		margin: 0 5%;
@@ -168,8 +171,7 @@ header {
 		}
 	}
 	p {
-		font-family: @body-font;
-		font-size: 1.8rem;
+		.p-text();
 	}
 	.skills {
 		margin: 0 5% 20px;
@@ -208,10 +210,6 @@ header {
 			font-weight: 700;
 			margin-bottom: 5px;
 		}
-		p {
-			font-size: 1.8rem;
-			line-height: 1.5;
-		}
 	} /* This closes the Work History */
 
 } /* This closes the Skills & Work History section */
@@ -230,8 +228,6 @@ footer {
 		padding-top: 10px;
 	}
 	p {
-		font-family: @body-font;
-		font-size: 1.8rem;
-		line-height: 1.5;
+		.p-text();
 	}
 } /* This closes the footer */
